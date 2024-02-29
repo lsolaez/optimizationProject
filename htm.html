@@ -1,104 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Web Responsive</title>
-  <style>
-    /* Estilos generales */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      cursor: pointer; /* Agregamos el cursor pointer para indicar que es un enlace */
-    }
-    nav {
-      display: flex;
-      justify-content: space-around;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-    }
-    nav a:hover {
-      background-color: #555;
-    }
-    section {
-      padding: 20px 0;
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .section-content {
-      margin-top: 20px;
-      text-align: left;
-    }
-    /* Estilos específicos para la galería */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .gallery img {
-      width: calc(33.33% - 20px);
-      margin: 10px;
-    }
-    @media screen and (max-width: 768px) {
-      .gallery img {
-        width: calc(50% - 20px);
-      }
-    }
-    @media screen and (max-width: 480px) {
-      .gallery img {
-        width: calc(100% - 20px);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/main/style/style.css">
 </head>
+
 <body>
-  <header onclick="window.location.href='#'"> <!-- Agregamos el evento onclick -->
-    <h1>Header Fijo</h1>
+  <header onclick="window.location.href='#'">
+    <h1>Wine Quality</h1>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#seccion1">Sección 1</a>
-      <a href="#seccion2">Sección 2</a>
-      <a href="#seccion3">Sección 3</a>
-      <a href="#seccion4">Sección 4</a>
-      <a href="#seccion5">Sección 5</a>
+      <a href="#seccion1">Dataset</a>
+      <a href="#seccion2">Statical Insights</a>
+      <a href="#seccion3">Hypothesis</a>
+      <a href="#seccion4">Project Members</a>
     </nav>
   </header>
   <div class="container">
-    <section id="seccion1"> <!-- Añadimos un identificador único a cada sección -->
+    <section id="seccion1">
       <div class="section-content">
-        <h2>Sección 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
-        <p>Subtexto 1: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
-      </div>
-      <div class="gallery">
-        <img src="imagen1.jpg" alt="Imagen 1">
-        <img src="imagen2.jpg" alt="Imagen 2">
-        <img src="imagen3.jpg" alt="Imagen 3">
+        <h2>Dataset</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut
+          eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 1: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros
+          feugiat a.</p>
       </div>
     </section>
-    <!-- Secciones restantes con identificadores únicos -->
+    <section id="seccion2">
+      <div class="section-content">
+        <h2>Statical Insights</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut
+          eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 2: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros
+          feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <!-- Aquí puedes agregar las imágenes para la sección 2 si es necesario -->
+      </div>
+    </section>
+    <section id="seccion3">
+      <div class="section-content">
+        <h2>Hypothesis</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut
+          eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 3: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros
+          feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <!-- Aquí puedes agregar las imágenes para la sección 3 si es necesario -->
+      </div>
+    </section>
+    <section id="seccion4">
+      <div class="section-content">
+        <h2>Project Members</h2>
+      </div>
+      <div class="gallery">
+        <img src="img\elkin.jpeg" alt="Elkin Santos Palencia.">
+        <div class="image-description">
+          <p>Elkin Santis Palencia.</p>
+          <p> I'm Elkin, I'm 20 years old, I'm in seventh semester of system engineering. During the course of the
+            career
+            I have demonstrated skills developing programs with python, from basic programs to develop web pages with
+            different frameworks. I am very passionate about the field of artificial intelligence and I hope to continue
+            learning much more and be a great programmer.
+            A random fact about me is that my favorite movie is Interstellar. The realism of the science in Interstellar
+            makes the movie a wonder to behold, as it makes me feel like I'm really seeing from the inside how our
+            universe works
+          </p>
+        </div>
+        <img src="img\imgJohan.jpeg" alt="Johan Andrés Vergara Vega.">
+        <div class="image-description">
+          <p>Johan Andrés Vergara Vega.</p>
+          <p>I am Johan Vergara, I am a native of the city of Barranquilla, I am 21 years old and I am in my seventh
+            semester of systems engineering. I like my career very much, I practice different types of sports and as a
+            hobby I play some instruments.</p>
+        </div>
+        <img src="img\leonardo.jpeg" alt="Leornado Solaez.">
+        <div class="image-description">
+          <p>Leornado Jesús Solaez De Moya.</p>
+          <p>I'm Leonardo, I'm 20 years old and I'm in my seventh semester of systems engineering. During the course of
+            my
+            career I have been attracted by the development of programs using Python, also by the world of
+            telecommunications. The activities that I am passionate about outside the career field are the love for
+            volleyball and the passion for stringed instruments (especially the guitar).</p>
+        </div>
+        <img src="img\Fernando.jpeg" alt="Fernando.">
+        <div class="image-description">
+          <p>Fernando.</p>
+          <p>I'm Fernando, I'm 20 years old, and I'm in the seventh semester of systems engineering. I'm passionate
+            about artificial intelligence and the entire revolution in the field in recent years, and I would like to
+            work in it in the future. If we were in the Wizarding World, I would be a Hufflepuff..</p>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
+
 </html>

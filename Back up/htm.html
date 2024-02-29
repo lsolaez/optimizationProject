@@ -10,6 +10,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f0f0f0; /* Color de fondo general */
     }
     .container {
       max-width: 1200px;
@@ -25,6 +26,7 @@
       width: 100%;
       top: 0;
       z-index: 1000;
+      cursor: pointer; /* Agregamos el cursor pointer para indicar que es un enlace */
     }
     nav {
       display: flex;
@@ -42,10 +44,6 @@
       padding: 20px 0;
       text-align: center;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
     .section-content {
       margin-top: 20px;
       text-align: left;
@@ -56,9 +54,38 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
+    .gallery-item {
+      margin-bottom: 20px;
+      text-align: center;
+    }
     .gallery img {
       width: calc(33.33% - 20px);
       margin: 10px;
+    }
+    .image-description {
+      margin-top: 10px;
+    }
+    /* Estilos específicos para las secciones */
+    /* Cambia el color de fondo y el color de texto según necesites */
+    #seccion1 {
+      background-color: #ffffff; /* Color de fondo de la sección 1 */
+      color: #333; /* Color de texto de la sección 1 */
+    }
+    #seccion2 {
+      background-color: #f9f9f9; /* Color de fondo de la sección 2 */
+      color: #333; /* Color de texto de la sección 2 */
+    }
+    #seccion3 {
+      background-color: #ffffff; /* Color de fondo de la sección 3 */
+      color: #333; /* Color de texto de la sección 3 */
+    }
+    #seccion4 {
+      background-color: #f9f9f9; /* Color de fondo de la sección 4 */
+      color: #333; /* Color de texto de la sección 4 */
+    }
+    #seccion5 {
+      background-color: #ffffff; /* Color de fondo de la sección 5 */
+      color: #333; /* Color de texto de la sección 5 */
     }
     @media screen and (max-width: 768px) {
       .gallery img {
@@ -73,78 +100,98 @@
   </style>
 </head>
 <body>
-  <header onclick="window.location.href='#'">
-    <h1 a="title">Header Fijo</h1>
+  <header onclick="window.location.href='#'"> <!-- Agregamos el evento onclick -->
+    <h1>Header Fijo</h1>
     <nav>
       <a href="#">Inicio</a>
-      <a href="#">Sección 1</a>
-      <a href="#">Sección 2</a>
-      <a href="#">Sección 3</a>
-      <a href="#">Sección 4</a>
-      <a href="#">Sección 5</a>
+      <a href="#seccion1">Sección 1</a>
+      <a href="#seccion2">Sección 2</a>
+      <a href="#seccion3">Sección 3</a>
+      <a href="#seccion4">Sección 4</a>
+      <!--a href="#seccion5">Sección 5</a-->
     </nav>
   </header>
   <div class="container">
-    <section>
+    <section id="seccion1"> <!-- Añadimos un identificador único a cada sección -->
       <div class="section-content">
         <h2>Sección 1</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="img\imgJohan.jpeg" width: 300px; height: 200px; alt="Johan Andrés Vergara Vega.">
+            <div class="image-description">
+              <p>Johan Andrés Vergara Vega.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img\elkin.jpeg" width: 300px; height: 200px; alt="Elkin Santos Palencia.">
+            <div class="image-description">
+              <p>Elkin Santos Palencia.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img\leonardo.jpeg" width: 300px; height: 200px; alt="Leornado Solaez.">
+            <div class="image-description">
+              <p>Leornado Solaez.</p>
+            </div>
+          </div>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
         <p>Subtexto 1: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
       </div>
-      <div class="gallery">
-        <img src="/main/img/imagen1Johan.jpeg" alt="Imagen 1">
-        <img src="imagen2.jpg" alt="Imagen 2">
-        <img src="imagen3.jpg" alt="Imagen 3">
-      </div>
     </section>
-    <section>
+    <section id="seccion2">
       <div class="section-content">
         <h2>Sección 2</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
         <p>Subtexto 2: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
       </div>
       <div class="gallery">
-        <img src="imagen4.jpg" alt="Imagen 4">
-        <img src="imagen5.jpg" alt="Imagen 5">
-        <img src="imagen6.jpg" alt="Imagen 6">
+        <!-- Aquí puedes agregar las imágenes para la sección 2 si es necesario -->
       </div>
     </section>
-    <section>
+    <section id="seccion3">
       <div class="section-content">
         <h2>Sección 3</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
         <p>Subtexto 3: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
       </div>
       <div class="gallery">
-        <img src="imagen7.jpg" alt="Imagen 7">
-        <img src="imagen8.jpg" alt="Imagen 8">
-        <img src="imagen9.jpg" alt="Imagen 9">
+        <!-- Aquí puedes agregar las imágenes para la sección 3 si es necesario -->
       </div>
     </section>
-    <section>
+    <section id="seccion4">
       <div class="section-content">
         <h2>Sección 4</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
         <p>Subtexto 4: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
       </div>
       <div class="gallery">
-        <img src="imagen10.jpg" alt="Imagen 10">
-        <img src="imagen11.jpg" alt="Imagen 11">
-        <img src="imagen12.jpg" alt="Imagen 12">
+        <img src="img\elkin.jpeg" width: 200px; height: 200px; align:center; alt="Elkin Santos Palencia.">
+        <div class="image-description">
+          <p>Elkin Santos Palencia.</p>
+        </div>
+        <img src="img\imgJohan.jpeg" width: 200px; height: 200px; align:left; alt="Johan Andrés Vergara Vega.">
+        <div class="image-description">
+          <p>Johan Andrés Vergara Vega.</p>
+        </div>
+        <img src="img\leonardo.jpeg" width: 200px; height: 200px; align:right; alt="Leornado Solaez.">
+        <div class="image-description">
+          <p>Leornado Solaez.</p>
+        </div>
       </div>
     </section>
-    <section>
+    <!--
+    <section id="seccion5">
       <div class="section-content">
         <h2>Sección 5</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
         <p>Subtexto 5: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
       </div>
       <div class="gallery">
-        <img src="imagen13.jpg" alt="Imagen 13">
-        <img src="imagen14.jpg" alt="Imagen 14">
-        <img src="imagen15.jpg" alt="Imagen 15">
+        <-- Aquí puedes agregar las imágenes para la sección 5 si es necesario ->
       </div>
     </section>
+  -->
   </div>
 </body>
 </html>
