@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web Responsive</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    section {
+      padding: 20px 0;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .section-content {
+      margin-top: 20px;
+      text-align: left;
+    }
+    /* Estilos específicos para la galería */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .gallery img {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      .gallery img {
+        width: calc(50% - 20px);
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .gallery img {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header onclick="window.location.href='#'">
+    <h1 a="title">Header Fijo</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Sección 1</a>
+      <a href="#">Sección 2</a>
+      <a href="#">Sección 3</a>
+      <a href="#">Sección 4</a>
+      <a href="#">Sección 5</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section>
+      <div class="section-content">
+        <h2>Sección 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 1: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <img src="/main/img/imagen1Johan.jpeg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+      </div>
+    </section>
+    <section>
+      <div class="section-content">
+        <h2>Sección 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 2: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <img src="imagen4.jpg" alt="Imagen 4">
+        <img src="imagen5.jpg" alt="Imagen 5">
+        <img src="imagen6.jpg" alt="Imagen 6">
+      </div>
+    </section>
+    <section>
+      <div class="section-content">
+        <h2>Sección 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 3: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <img src="imagen7.jpg" alt="Imagen 7">
+        <img src="imagen8.jpg" alt="Imagen 8">
+        <img src="imagen9.jpg" alt="Imagen 9">
+      </div>
+    </section>
+    <section>
+      <div class="section-content">
+        <h2>Sección 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 4: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <img src="imagen10.jpg" alt="Imagen 10">
+        <img src="imagen11.jpg" alt="Imagen 11">
+        <img src="imagen12.jpg" alt="Imagen 12">
+      </div>
+    </section>
+    <section>
+      <div class="section-content">
+        <h2>Sección 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero nec ligula vestibulum lobortis ut eu nibh. Fusce vel mi ac leo convallis porta vel sed dui.</p>
+        <p>Subtexto 5: Quisque volutpat urna ut finibus gravida. Duis elementum malesuada turpis, ac convallis eros feugiat a.</p>
+      </div>
+      <div class="gallery">
+        <img src="imagen13.jpg" alt="Imagen 13">
+        <img src="imagen14.jpg" alt="Imagen 14">
+        <img src="imagen15.jpg" alt="Imagen 15">
+      </div>
+    </section>
+  </div>
+</body>
+</html>
